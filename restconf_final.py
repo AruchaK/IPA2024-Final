@@ -9,7 +9,7 @@ load_dotenv()
 HOST = os.environ.get("ROUTER_HOST")
 
 # Router IP Address is 10.0.15.61-65
-api_url = "https://{HOST}/restconf/data/ietf-interfaces:interfaces"
+api_url = f"https://{HOST}/restconf/data/ietf-interfaces:interfaces"
 
 # the RESTCONF HTTP headers, including the Accept and Content-Type
 # Two YANG data formats (JSON and XML) work with RESTCONF 
